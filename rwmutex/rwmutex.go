@@ -28,7 +28,7 @@ func New() *RWMutex {
 // call excludes new readers from acquiring the lock. See the
 // documentation on the RWMutex type.
 func (rw *RWMutex) RLock() {
-	i := 0
+	i := 1
 	fmt.Println(i)
 }
 
