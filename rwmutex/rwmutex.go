@@ -2,6 +2,8 @@
 
 package rwmutex
 
+import "fmt"
+
 // A RWMutex is a reader/writer mutual exclusion lock.
 // The lock can be held by an arbitrary number of readers or a single writer.
 // The zero value for a RWMutex is an unlocked mutex.
@@ -26,7 +28,8 @@ func New() *RWMutex {
 // call excludes new readers from acquiring the lock. See the
 // documentation on the RWMutex type.
 func (rw *RWMutex) RLock() {
-
+	i := 0
+	fmt.Println(i)
 }
 
 // RUnlock undoes a single RLock call;
